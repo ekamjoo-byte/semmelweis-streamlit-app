@@ -27,9 +27,9 @@ df = load_data()
 
 st.title("Doctors’ Clinic Had Significantly Higher Mortality Rates Than Midwives’ Clinic")
 st.write("""
-This app visualizes mortality rates in two maternity clinics studied by Dr. Ignaz Semmelweis.
-The data shows that the Doctors’ clinic had consistently higher death rates than the Midwives’ clinic,
-helping reveal the importance of hand-washing in preventing infection.
+This app visualizes mortality rates in two maternity clinics studied by Dr. Ignaz Semmelweis. 
+The data shows that the Doctors’ clinic consistently had higher death rates than the Midwives’ clinic, 
+highlighting how differences in medical practice contributed to mortality and supporting the importance of hand-washing.
 """)
 
 # Summary metrics
