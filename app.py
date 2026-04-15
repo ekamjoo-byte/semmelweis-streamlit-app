@@ -26,13 +26,11 @@ def load_data():
 df = load_data()
 
 st.title("Doctors’ Clinic Had Significantly Higher Mortality Rates Than Midwives’ Clinic")
-st.write(
-    """
-    This Streamlit app explores yearly births, deaths, and mortality rates in two maternity clinics
-    studied by Dr. Ignaz Semmelweis. The visualizations highlight how mortality differed between the
-    clinics and why this evidence became important in showing the value of hand-washing in medical care.
-    """
-)
+st.write("""
+This app visualizes mortality rates in two maternity clinics studied by Dr. Ignaz Semmelweis.
+The data shows that the Doctors’ clinic had consistently higher death rates than the Midwives’ clinic,
+helping reveal the importance of hand-washing in preventing infection.
+""")
 
 # Summary metrics
 overall_avg = df.groupby("Clinic")["Mortality Rate (%)"].mean().round(2)
