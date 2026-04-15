@@ -25,7 +25,7 @@ def load_data():
 
 df = load_data()
 
-st.title("Dr. Ignaz Semmelweis: Mortality Rates by Clinic")
+st.title("Doctors’ Clinic Had Significantly Higher Mortality Rates Than Midwives’ Clinic")
 st.write(
     """
     This Streamlit app explores yearly births, deaths, and mortality rates in two maternity clinics
