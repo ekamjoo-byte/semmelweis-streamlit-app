@@ -36,16 +36,21 @@ highlighting how differences in medical practice contributed to mortality and su
 overall_avg = df.groupby("Clinic")["Mortality Rate (%)"].mean().round(2)
 
 m1, m2 = st.columns(2)
+
 with m1:
     st.metric(
-        "Average Mortality Rate: Doctors (Clinic 1)",
+        "Doctors (Clinic 1)",
         f"{overall_avg['Doctors (Clinic 1)']:.2f}%"
     )
+
 with m2:
     st.metric(
-        "Average Mortality Rate: Midwives (Clinic 2)",
+        "Midwives (Clinic 2)",
         f"{overall_avg['Midwives (Clinic 2)']:.2f}%"
     )
+
+# ✅ Move this OUTSIDE columns
+st.markdown("**Clinic 1 mortality is more than double Clinic 2, revealing a critical difference in medical practice.**")
 
 st.markdown("### Explore the data")
 
